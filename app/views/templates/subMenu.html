@@ -1,0 +1,17 @@
+<span class="sub-menu" ng-style="subMenuStyle" ng-mouseleave="hideSubMenu()">
+    <span ng-repeat="cat in menudata">
+        <span ng-repeat="subcat in cat " ng-if="subcat.name==menuSelected">
+            <span class="sub-sub-menu" ng-repeat="menu in subcat.menu">
+                <p>{{menu.name}}</p>
+                <hr>
+                <ul>
+                    <a href="#" ng-repeat="option in menu.options">
+                        <li>
+                            {{option}}
+                        </li>
+                    </a>
+                </ul>
+            </span>
+        </span>
+    </span>
+</span>

@@ -1,0 +1,16 @@
+<a href="../index.html">
+    <img src="../../icons/logo2.png" alt="" id="logo-large">
+    <img src="../../icons/logo2.png" alt="" id="logo-small">
+</a>
+<section class="categories">
+    <span ng-repeat="subcat in menudata">
+        <a href="{{subcat.category.name | lowercase}}.html" ng-mouseenter="displaySubMenu(subcat.category.name)" ng-mouseleave="hideMenu()">{{subcat.category.name}}</a>
+    </span>
+</section>
+<span class="form-inline">
+    <input class="form-control" type="search" name="" id="search-input" placeholder="Search">
+    <button class="fa fa-search" id="search-button"></button>
+    <a href="#" id="cart-link">Cart
+        <img src="../../icons/cart.jpg" alt="Cart" id="cart-logo">
+    </a>
+</span>

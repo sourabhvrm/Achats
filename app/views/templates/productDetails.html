@@ -1,0 +1,24 @@
+<section class="row" ng-controller="ProductController">
+    <section class="vertical-image col-md-2">
+        <ul>
+            <li ng-repeat="image in productData.images">
+                <img src="{{image}}" ng-click="activeimage($index)">
+            </li>
+        </ul>
+    </section>
+    <section class="col-md-4 image-preview">
+        <img src="{{activeImageSrc}}" alt="">
+    </section>
+    <section class="col-md-6 product-details">
+        <h5 class="lead">{{productData.title}}</h5>
+        <h6>{{productData.desc}}</h6>
+        <span id="ratings">{{productData.rating}}
+            <span>&#9733;</span>
+        </span>
+        <p>&#8377; {{productData.price}}</p>
+        <p ng-if="productData.inStock">Availablity : &#10003; In Stock</p>
+        <p ng-if="!productData.inStock">Availablity : &#10005; Out of Stock</p>
+        <input type="number" name="" id="" placeholder="Enter Quantity" ng-model="quantity" ng-init="quantity=1" min="1" max="10">
+        <button class="btn">Add to Cart</button>
+    </section>
+</section>

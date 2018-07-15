@@ -1,0 +1,153 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+a {
+  color: black;
+}
+
+.header {
+  background-color: #EAEAEA;
+}
+
+.top-links {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 55%;
+}
+
+.top-links ul {
+  padding: 13px 15px;
+  margin: 0px;
+}
+
+.top-links li {
+  /* border-spacing: 5px; */
+  padding-right: 10px;
+  border-right: 1px solid grey;
+}
+
+.top-links a {
+  text-decoration: none;
+  color: rgb(22, 21, 21);
+}
+
+.top-links a:hover {
+  color: red;
+}
+
+.navigation {
+  background-color: #ffffff;
+}
+
+#logo-large {
+  margin: -20px 100px;
+}
+
+#logo-small {
+  display: none;
+  margin: -8px 100px;
+  width: 70px;
+  height: 49px;
+}
+
+.categories {
+  position: absolute;
+  margin-left: 15%;
+}
+
+.categories a {
+  /* margin: 0px 20px; */
+  padding: 17px;
+}
+
+.categories a:hover {
+  background-color: red;
+  color: #ffffff;
+}
+
+#search-input {
+  /* border-radius: 5px; */
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#search-button {
+  /* height: 30px; */
+  padding: 8px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-color: red;
+  background-color: red;
+  color: #ffffff;
+}
+
+#cart-link {
+  margin-left: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+#cart-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 50px;
+}
+
+.sub-menu {
+  padding: 2% 10%;
+  display: none;
+}
+
+.sub-sub-menu:first-child {
+  /* margin-left: 10%; */
+}
+
+.sub-menu {
+  /* z-index: 1; */
+  /* position: absolute; */
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.97);
+}
+
+.sub-sub-menu {
+  float: left;
+  width: 15%;
+  margin: 0px 10px;
+}
+
+.sub-sub-menu p {
+  margin: 0px;
+}
+
+.sub-sub-menu hr {
+  margin: 5px 0px;
+}
+
+.sub-sub-menu ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.slider img {
+  height: 400px;
+  width: 100%;
+}
+
+.footer {
+  /* position: initial; */
+  /* bottom: 0; */
+  background-color: #EAEAEA;
+  padding: 50px;
+  font-size: 12px;
+}

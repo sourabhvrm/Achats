@@ -1,0 +1,150 @@
+<script src="scripts/controllers/product.js"></script>
+<script src="scripts/controllers/women.js"></script>
+<script src="scripts/controllers/men.js"></script>
+<script src="scripts/controllers/menu.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="scripts/indejs.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/factory/menu.js"></script>
+    <script src="scripts/controllers/menu.js"></script>
+    <!-- <script src="release/release.min.js"></script> -->
+    <title>FlipShop</title>
+</head>
+
+<body ng-app="achatsApp" ng-controller="MenuCtrl">
+    <header class="container-fluid header">
+        <section class="container">
+            <section class="top-links">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="">Email Sign Up</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="">Customer Service</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="">Find a Store</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="">Sign In</a>
+                    </li>
+                    <span>India</span>
+                </ul>
+            </section>
+        </section>
+    </header>
+    <section class="navbar navigation sticky-top">
+        <a href="index.html ">
+            <img src="icons/logo2.png" alt="" id="logo-large">
+            <img src="icons/logo2.png" alt="" id="logo-small">
+        </a>
+        <section class="categories">
+            <span ng-repeat="subcat in menudata">
+                <a href="views/{{subcat.category.name | lowercase}}.html" ng-mouseenter="displaySubMenu(subcat.category.name)" ng-mouseleave="hideMenu()">{{subcat.category.name}}</a>
+            </span>
+        </section>
+        <span class="form-inline">
+            <input class="form-control" type="search" name="" id="search-input" placeholder="Search">
+            <button class="fa fa-search" id="search-button"></button>
+            <a href="#" id="cart-link">Cart
+                <img src="icons/cart.jpg" alt="Cart" id="cart-logo">
+            </a>
+        </span>
+    </section>
+    <section class="sub-menu" ng-style="subMenuStyle" ng-mouseleave="hideSubMenu()">
+        <span ng-repeat="cat in menudata">
+            <span ng-repeat="subcat in cat " ng-if="subcat.name==menuSelected">
+                <span class="sub-sub-menu" ng-repeat="menu in subcat.menu">
+                    <p>{{menu.name}}</p>
+                    <hr>
+                    <ul>
+                        <a href="#" ng-repeat="option in menu.options">
+                            <li>
+                                {{option}}
+                            </li>
+                        </a>
+                    </ul>
+                </span>
+            </span>
+        </span>
+        </span>
+    </section>
+    <section class="main-body">
+        <section class="slider">
+            <img src="images/banner.jpg" alt="" srcset="">
+        </section>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus sapiente, optio harum eveniet nemo voluptatibus
+            necessitatibus temporibus numquam voluptatum autem perspiciatis odio quis possimus pariatur inventore qui voluptatem
+            cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos reprehenderit libero voluptas,
+            tenetur sequi ullam minima omnis blanditiis adipisci illum deleniti soluta excepturi odit molestias sapiente
+            aspernatur, delectus aliquid? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque eum numquam voluptates
+            ad in praesentium quos at repellat eligendi nobis. Pariatur earum molestias numquam similique quidem reprehenderit
+            hic, totam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptates ducimus, ea asperiores
+            eligendi consequuntur similique atque assumenda deleniti reprehenderit velit et adipisci, laudantium accusantium
+            suscipit nobis quas exercitationem numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos impedit
+            vero, omnis consectetur mollitia aut architecto nulla voluptas labore modi itaque? Magnam enim fugiat eius, in
+            eveniet quae quis delectus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas odio exercitationem
+            accusantium natus ducimus architecto tempore provident est nobis voluptate, omnis asperiores? Eveniet, quaerat
+            itaque iste consectetur minima blanditiis suscipit? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Sint, laudantium quia. Quasi quam mollitia nam aspernatur nemo iste repellat fugiat labore, necessitatibus, pariatur
+            repudiandae error maiores praesentium quae natus unde. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Minima id exercitationem blanditiis voluptates dolorem, natus totam sit porro eveniet optio nam beatae, aliquam
+            ab, saepe quisquam ad voluptatem hic quo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, recusandae
+            fugit eum magnam et doloribus voluptates accusamus, atque commodi eos quam ut, qui molestiae debitis ullam fugiat
+            soluta hic? Accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis et dolorum id, eaque,
+            aliquam eveniet temporibus numquam aut ducimus quis eos consequuntur, sint corrupti quod rem totam culpa qui
+            obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque consectetur fugit voluptates similique
+            atque beatae, mollitia facere obcaecati tempore excepturi sed at, totam ad debitis amet, veniam deserunt quisquam
+            maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus sapiente, optio harum eveniet
+            nemo voluptatibus necessitatibus temporibus numquam voluptatum autem perspiciatis odio quis possimus pariatur
+            inventore qui voluptatem cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos reprehenderit
+            libero voluptas, tenetur sequi ullam minima omnis blanditiis adipisci illum deleniti soluta excepturi odit molestias
+            sapiente aspernatur, delectus aliquid? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque eum numquam
+            voluptates ad in praesentium quos at repellat eligendi nobis. Pariatur earum molestias numquam similique quidem
+            reprehenderit hic, totam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptates
+            ducimus, ea asperiores eligendi consequuntur similique atque assumenda deleniti reprehenderit velit et adipisci,
+            laudantium accusantium suscipit nobis quas exercitationem numquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Eos impedit vero, omnis consectetur mollitia aut architecto nulla voluptas labore modi itaque? Magnam enim
+            fugiat eius, in eveniet quae quis delectus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas odio
+            exercitationem accusantium natus ducimus architecto tempore provident est nobis voluptate, omnis asperiores?
+            Eveniet, quaerat itaque iste consectetur minima blanditiis suscipit? Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Sint, laudantium quia. Quasi quam mollitia nam aspernatur nemo iste repellat fugiat labore,
+            necessitatibus, pariatur repudiandae error maiores praesentium quae natus unde. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Minima id exercitationem blanditiis voluptates dolorem, natus totam sit porro eveniet optio
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fuga! Quas molestias temporibus, delectus
+            at, sunt obcaecati facilis vitae repellat fuga ad dolorum eligendi voluptates explicabo rem ipsum consectetur
+            iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem consequatur illum eaque itaque qui
+            odit sit, dolor explicabo voluptate quasi. Ad consequatur, laboriosam amet id totam nobis odio voluptates corrupti
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, fugit. Dolor eligendi voluptatibus ad dicta
+            molestiae, molestias praesentium, obcaecati eveniet quaerat perspiciatis explicabo, dolorem non omnis necessitatibus
+            quas. Eos, quasi.
+        </p>
+    </section>
+    <footer class=" footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui eveniet quis iste tempora consequatur perferendis
+            fugit ad soluta nobis veniam nam, in culpa blanditiis possimus voluptate. Hic, qui cupiditate. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Cumque atque doloribus obcaecati mollitia necessitatibus quidem corporis
+            enim. Deleniti vitae delectus molestias, odit nostrum dignissimos ratione, eligendi, alias odio error nesciunt.
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum sapiente expedita sed voluptatum corrupti porro?
+            Rem adipisci minus illum, quaerat maxime ullam sequi tempora explicabo provident quam nobis quidem nam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut porro fugiat dolor ipsum minus labore error
+            molestias perferendis totam quam dolorem tempore doloremque et, aperiam molestiae illo omnis ullam.</p>
+    </footer>
+</body>
+
+</html>
