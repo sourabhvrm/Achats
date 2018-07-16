@@ -1,8 +1,8 @@
-<section class="row" ng-controller="ProductController">
+<section class="row" ng-controller="ProductCtrl">
     <section class="vertical-image col-md-2">
         <ul>
             <li ng-repeat="image in productData.images">
-                <img src="{{image}}" ng-click="activeimage($index)">
+                <img src="{{image}}" ng-mouseover="activeimage($index)">
             </li>
         </ul>
     </section>
