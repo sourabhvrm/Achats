@@ -6,6 +6,7 @@ version 0.16.0.
 ## Build & development
 
 Run `grunt` for building and `grunt serve` for preview.
+Beforing running the application, first start the json server with `npm run-script jsonserver`
 
 ## Testing
 
