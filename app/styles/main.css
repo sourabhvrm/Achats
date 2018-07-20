@@ -66,11 +66,23 @@ a {
 .categories a {
   /* margin: 0px 20px; */
   padding: 17px;
+  /* transition: 500ms; */
 }
 
 .categories a:hover {
   background-color: red;
   color: #ffffff;
+  border-radius: 1px;
+  /* transform: rotateX(80deg); */
+}
+
+.menu-link {
+  display: inline-block;
+  transition: 100ms;
+}
+
+.menu-link:hover {
+  transform: rotateX(20deg) scale(1.1);
 }
 
 #search-input {
@@ -95,29 +107,24 @@ a {
   font-weight: bold;
 }
 
+#cart-logo:hover {
+  transform: scale(1.3);
+}
+
 #cart-logo {
   width: 30px;
   height: 30px;
   margin-right: 50px;
+  transition: 100ms;
 }
 
 .sub-menu {
   padding: 2% 10%;
-  display: none;
-}
-
-.sub-sub-menu:first-child {
-  /* margin-left: 10%; */
-}
-
-.sub-menu {
-  /* z-index: 1; */
-  /* position: absolute; */
-  background-color: #ffffff;
   position: absolute;
   z-index: 1;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.97);
+  transition: all 2s linear;
 }
 
 .sub-sub-menu {

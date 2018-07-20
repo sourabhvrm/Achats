@@ -16,7 +16,6 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/factory/menu.js"></script>
     <script src="scripts/controllers/menu.js"></script>
-    <!-- <script src="release/release.min.js"></script> -->
     <title>FlipShop</title>
 </head>
 
@@ -49,7 +48,9 @@
         </a>
         <section class="categories">
             <span ng-repeat="subcat in menudata">
-                <a href="views/{{subcat.category.name | lowercase}}.html" ng-mouseenter="displaySubMenu(subcat.category.name)" ng-mouseleave="hideMenu()">{{subcat.category.name}}</a>
+                <section class="menu-link">
+                    <a href="views/{{subcat.category.name | lowercase}}.html" ng-mouseenter="displaySubMenu(subcat.category.name)" ng-mouseleave="hideMenu()">{{subcat.category.name}}</a>
+                </section>
             </span>
         </section>
         <span class="form-inline">
@@ -60,27 +61,25 @@
             </a>
         </span>
     </section>
-    <section class="sub-menu" ng-style="subMenuStyle" ng-mouseleave="hideSubMenu()">
-        <span ng-repeat="cat in menudata">
-            <span ng-repeat="subcat in cat " ng-if="subcat.name==menuSelected">
-                <span class="sub-sub-menu" ng-repeat="menu in subcat.menu">
+    <section class="sub-menu" ng-hide="!menuSelected" ng-mouseleave=" hideSubMenu() ">
+        <span ng-repeat="cat in menudata ">
+            <span ng-repeat="subcat in cat " ng-if="subcat.name==menuSelected ">
+                <span class="sub-sub-menu " ng-repeat="menu in subcat.menu ">
                     <p>{{menu.name}}</p>
                     <hr>
                     <ul>
-                        <a href="#" ng-repeat="option in menu.options">
-                            <li>
-                                {{option}}
-                            </li>
-                        </a>
+                        <li ng-repeat="option in menu.options ">
+                            <a href="# "> {{option}}</a>
+                        </li>
                     </ul>
                 </span>
             </span>
         </span>
         </span>
     </section>
-    <section class="main-body">
-        <section class="slider">
-            <img src="images/banner.png" alt="" srcset="">
+    <section class="main-body ">
+        <section class="slider ">
+            <img src="images/banner.png " alt=" " srcset=" ">
         </section>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus sapiente, optio harum eveniet nemo voluptatibus
@@ -130,7 +129,7 @@
             quas. Eos, quasi.
         </p>
     </section>
-    <footer class=" footer">
+    <footer class=" footer ">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui eveniet quis iste tempora consequatur perferendis
             fugit ad soluta nobis veniam nam, in culpa blanditiis possimus voluptate. Hic, qui cupiditate. Lorem ipsum dolor
             sit amet consectetur adipisicing elit. Cumque atque doloribus obcaecati mollitia necessitatibus quidem corporis

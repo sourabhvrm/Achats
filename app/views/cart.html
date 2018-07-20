@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../bower_components/angular/angular.min.js"></script>
+    <script src="../scripts/indejs.js"></script>
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/factory/menu.js"></script>
+    <script src="../scripts/controllers/menu.js"></script>
+    <script src="../scripts/factory/men.js"></script>
+    <script src="../scripts/controllers/men.js"></script>
+    <title>FlipShop | MEN</title>
+</head>
+
+<body ng-app="achatsApp" ng-controller="MenuCtrl">
+    <header class="container-fluid header">
+        <section class="container">
+            <section class="top-links">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="">Email Sign Up</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="">Customer Service</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="">Find a Store</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="">Sign In</a>
+                    </li>
+                    <span>India</span>
+                </ul>
+            </section>
+        </section>
+    </header>
+    <section class="navbar navigation sticky-top" ng-include="'templates/menu.html'"></section>
+    <section ng-include="'templates/subMenu.html'"></section>
+    <section class="main-body container-fluid">
+
+    </section>
+    <footer class=" footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui eveniet quis iste tempora consequatur perferendis
+            fugit ad soluta nobis veniam nam, in culpa blanditiis possimus voluptate. Hic, qui cupiditate. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Cumque atque doloribus obcaecati mollitia necessitatibus quidem corporis
+            enim. Deleniti vitae delectus molestias, odit nostrum dignissimos ratione, eligendi, alias odio error nesciunt.
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum sapiente expedita sed voluptatum corrupti porro?
+            Rem adipisci minus illum, quaerat maxime ullam sequi tempora explicabo provident quam nobis quidem nam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut porro fugiat dolor ipsum minus labore error
+            molestias perferendis totam quam dolorem tempore doloremque et, aperiam molestiae illo omnis ullam.</p>
+    </footer>
+</body>
+
+</html>

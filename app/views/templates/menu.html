@@ -4,7 +4,9 @@
 </a>
 <section class="categories">
     <span ng-repeat="subcat in menudata">
-        <a href="{{subcat.category.name | lowercase}}.html" ng-mouseenter="displaySubMenu(subcat.category.name)" ng-mouseleave="hideMenu()">{{subcat.category.name}}</a>
+        <section class="menu-link">
+            <a href="{{subcat.category.name | lowercase}}.html" ng-mouseenter="displaySubMenu(subcat.category.name)" ng-mouseleave="hideMenu()">{{subcat.category.name}}</a>
+        </section>
     </span>
 </section>
 <span class="form-inline">

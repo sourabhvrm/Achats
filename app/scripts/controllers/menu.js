@@ -20,27 +20,16 @@ app.controller('MenuCtrl', ["$scope", "menuFactory", function (scope, menuFactor
     scope.displaySubMenu = (menuSelected) => {
         // console.log(menuSelected);
         scope.menuSelected = menuSelected;
-        scope.subMenuStyle = {
-            "display": "inherit"
-        }
-        // [subMenu, menu] = [true];
-        // console.log("Mouse Entered");
     }
     var [subMenu, menu] = [false];
     scope.hideSubMenu = () => {
         subMenu = false;
         if (!subMenu && !menu) {
-            menuHide();
+            scope.menuSelected = false;
         }
         // console.log("Mouse Leaved");
     }
     scope.hideMenu = () => {
         menu = false;
-    }
-
-    menuHide = () => {
-        scope.subMenuStyle = {
-            "display": "none"
-        }
     }
 }]);
