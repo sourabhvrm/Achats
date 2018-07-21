@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/cart.css">
     <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../../bower_components/angular/angular.min.js"></script>
@@ -15,9 +16,9 @@
     <script src="../scripts/app.js"></script>
     <script src="../scripts/factory/menu.js"></script>
     <script src="../scripts/controllers/menu.js"></script>
-    <script src="../scripts/factory/men.js"></script>
-    <script src="../scripts/controllers/men.js"></script>
-    <title>FlipShop | MEN</title>
+    <script src="../scripts/factory/cart.js"></script>
+    <script src="../scripts/controllers/cart.js"></script>
+    <title>FlipShop | Cart</title>
 </head>
 
 <body ng-app="achatsApp" ng-controller="MenuCtrl">
@@ -44,8 +45,14 @@
     </header>
     <section class="navbar navigation sticky-top" ng-include="'templates/menu.html'"></section>
     <section ng-include="'templates/subMenu.html'"></section>
-    <section class="main-body container-fluid">
-
+    <section class="main-body container-fluid" ng-controller="CartCtrl">
+        <section class="container">
+            <section class="cart-header">Cart</section>
+            <section ng-repeat="x in [1,2,3,4,5]">
+                <section class="cart-product" ng-include="'templates/cartProduct.html'">
+                </section>
+            </section>
+        </section>
     </section>
     <footer class=" footer">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui eveniet quis iste tempora consequatur perferendis
