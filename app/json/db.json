@@ -300,7 +300,8 @@
             "details": {
                 "test": "hello"
             },
-            "price": 4999,
+            "price": 6999,
+            "discount": 0.2,
             "images": ["https://dsw.scene7.com/is/image/DSWShoes/404995_001_ss_01?$pdp-image$",
                 "https://sits-pod46.demandware.net/dw/image/v2/AAPR_PRD/on/demandware.static/-/Sites-payless-catalog/default/dwa0ca9ac6/images/hi-res/164524_6_1400x1400.jpg",
                 "https://media03.toms.com/static/www/images/product/MENS/ATG/SIDE/10011588-GreyLinenMensPreston-P-1450x1015.jpg",
@@ -326,6 +327,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -345,6 +347,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -364,6 +367,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -383,6 +387,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -402,6 +407,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -421,6 +427,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -440,6 +447,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -459,6 +467,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -478,6 +487,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -497,6 +507,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -516,6 +527,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -535,6 +547,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -554,6 +567,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -573,6 +587,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -592,6 +607,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -611,6 +627,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -630,6 +647,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -649,6 +667,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -668,6 +687,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -687,6 +707,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -706,6 +727,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -725,6 +747,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -744,6 +767,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -763,6 +787,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,
@@ -782,6 +807,7 @@
 
             },
             "price": 1000,
+            "discount": 0.2,
             "images": ["", ""],
             "rating": 0,
             "inStock": true,

@@ -9,15 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/cart.css">
-    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../../bower_components/angular/angular.min.js"></script>
-    <script src="../scripts/indejs.js"></script>
-    <script src="../scripts/app.js"></script>
-    <script src="../scripts/factory/menu.js"></script>
-    <script src="../scripts/controllers/menu.js"></script>
-    <script src="../scripts/factory/cart.js"></script>
-    <script src="../scripts/controllers/cart.js"></script>
     <title>FlipShop | Cart</title>
 </head>
 
@@ -46,15 +37,46 @@
     <section class="navbar navigation sticky-top" ng-include="'templates/menu.html'"></section>
     <section ng-include="'templates/subMenu.html'"></section>
     <section class="main-body container-fluid" ng-controller="CartCtrl">
+        <section ng-if="!dataAvailable" class="progress-indicator">
+            <div class="loader">
+            </div>
+        </section>
         <section class="container">
-            <section class="cart-header">Cart</section>
-            <section ng-repeat="x in [1,2,3,4,5]">
-                <section class="cart-product" ng-include="'templates/cartProduct.html'">
+            <section ng-if="dataAvailable" class="row">
+                <section class="col-md-9">
+                    <section class="cart-header">Cart</section>
+                    <section ng-repeat="product in cartProducts track by $index">
+                        <section class="cart-product" ng-include="'templates/cartProduct.html'">
+                        </section>
+                    </section>
+                </section>
+                <section class="col-md-3">
+                    <section class="price-header">
+                        Price Details
+                    </section>
+                    <section class="cart-summary">
+                        <p>Price ({{cartProducts.length}} Items)
+                            <span>&#8377; {{totalPrice | number : 0}}</span>
+                        </p>
+                        <p>Delivery Charges
+                            <span>&#8377; {{deliveryCharge | number : 0}}</span>
+                        </p>
+                        <hr>
+                        <p>Amount Payable
+                            <span>&#8377; {{totalPrice + deliveryCharge | number : 0}}</span>
+                        </p>
+                    </section>
+                </section>
+                <section class="col-md-9">
+                    <button class="btn buy-now">Buy Now</button>
+                </section>
+                <section class="col-md-3">
+
                 </section>
             </section>
         </section>
     </section>
-    <footer class=" footer">
+    <footer class="footer">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui eveniet quis iste tempora consequatur perferendis
             fugit ad soluta nobis veniam nam, in culpa blanditiis possimus voluptate. Hic, qui cupiditate. Lorem ipsum dolor
             sit amet consectetur adipisicing elit. Cumque atque doloribus obcaecati mollitia necessitatibus quidem corporis
@@ -65,6 +87,16 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut porro fugiat dolor ipsum minus labore error
             molestias perferendis totam quam dolorem tempore doloremque et, aperiam molestiae illo omnis ullam.</p>
     </footer>
+
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../bower_components/angular/angular.min.js"></script>
+    <script src="../scripts/indejs.js"></script>
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/factory/menu.js"></script>
+    <script src="../scripts/controllers/menu.js"></script>
+    <script src="../scripts/factory/cart.js"></script>
+    <script src="../scripts/controllers/cart.js"></script>
 </body>
 
 </html>

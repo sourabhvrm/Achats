@@ -21,7 +21,7 @@ app.controller("ProductCtrl", ["$scope", "product", function (scope, product) {
                 // console.log(data);
                 scope.productData = data["0"];
                 scope.activeImageSrc = scope.productData.images["0"];
-                console.log(scope.productData);
+                // console.log(scope.productData);
             }).catch(err => {
                 console.log(err);
             });

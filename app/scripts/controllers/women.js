@@ -11,6 +11,6 @@ app.controller("WomenCtrl", ($scope, womenFactory) => {
     var pr = womenFactory.fetchBanner();
     pr.then(data => {
         $scope.banner = data;
-        console.log(data);
+        // console.log(data);
     }).catch(err => console.log(err));
 });

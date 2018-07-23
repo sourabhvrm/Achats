@@ -1,7 +1,7 @@
 app.factory("menuFactory", ($http, $q) => {
     const obj = {
         retrieveData() {
-            console.log("Retireve Data Started");
+            // console.log("Retireve Data Started");
             var defer = $q.defer();
             const url = "http://localhost:3000/categories";
             $http.get(url).then(response => {

@@ -9,6 +9,19 @@ app.factory("CartFactory", ($http, $q) => {
                 defer.reject(err);
             });
             return defer.promise;
+        },
+        productsByIds(producsId) {
+            var defer = $q.defer();
+            var query = "http://localhost:3000/products?";
+            producsId.forEach(id => {
+                query += "id=" + id + "&";
+            });
+            $http.get(query).then(response => {
+                defer.resolve(response.data);
+            }, err => {
+                console.log(err);
+            });
+            return defer.promise;
         }
     }
 });

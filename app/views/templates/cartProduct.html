@@ -1,13 +1,12 @@
 <a href="#" class="prod-logo">
-    <img src="https://sits-pod46.demandware.net/dw/image/v2/AAPR_PRD/on/demandware.static/-/Sites-payless-catalog/default/dwa0ca9ac6/images/hi-res/164524_6_1400x1400.jpg"
-        alt="">
+    <img src="{{product.images[0]}}" alt="">
 </a>
-<a href="#" class="prod-title">Honor 9 Lite (Glacier Grey, 32 GB)</a>
-<p class="prod-brand">Honor</p>
+<a href="#" class="prod-title">{{product.title}}</a>
+<p class="prod-brand">{{product.brand}}</p>
 <div class="price">
-    <span>&#8377; 10000</span>
+    <span>&#8377; {{product.price - product.price * product.discount | number : 0}}</span>
     <span>
-        <strike>&#8377; 12000</strike>
+        <strike>&#8377; {{product.price | number : 0}}</strike>
     </span>
 </div>
-<button class="btn">Remove</button>
+<button class="btn" ng-click="removeProduct(product.id)">Remove</button>

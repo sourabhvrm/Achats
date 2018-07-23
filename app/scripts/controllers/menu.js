@@ -6,11 +6,11 @@
  * Controller of the achatsApp
  */
 app.controller('MenuCtrl', ["$scope", "menuFactory", function (scope, menuFactory) {
-    console.log("Excecuting Promise");
+    // console.log("Excecuting Promise");
     var promise = menuFactory.retrieveData();
-    console.log("Promise Executed");
+    // console.log("Promise Executed");
     promise.then(data => {
-        console.log(data);
+        // console.log(data);
         //console.log(data["0"].category);
         scope.menudata = data;
     }).catch(err => {
