@@ -84,7 +84,8 @@
 
 .cart-product {
     /* transform-origin: top center; */
-    animation: flip 600ms;
+    border-radius: 4px;
+    animation: flip 1000ms;
 }
 
 @keyframes flip {

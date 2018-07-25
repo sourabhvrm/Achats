@@ -34,14 +34,28 @@
     border-color: black;
 }
 
-.image-preview img {
+.image-preview>img {
     width: 327px;
     height: 327px;
 }
 
-.product-details button {
-    margin: 10px 0px;
+#price {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.product-details>input {
     display: block;
+}
+
+.product-details>button {
+    margin: 10px 0px;
+    display: inline;
+}
+
+#productAdded {
+    color: red;
+    margin-left: 50px;
 }
 
 #ratings {

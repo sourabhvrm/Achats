@@ -29,6 +29,11 @@ app.controller('MenuCtrl', ["$scope", "menuFactory", function (scope, menuFactor
         }
         // console.log("Mouse Leaved");
     }
+
+    scope.searchButton = function () {
+        // console.log("Button Clicked");
+    }
+
     scope.hideMenu = () => {
         menu = false;
     }

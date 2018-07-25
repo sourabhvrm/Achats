@@ -1,4 +1,4 @@
-<span class="sub-menu" ng-hide="!menuSelected" ng-mouseleave="hideSubMenu()">
+<span class="sub-menu" ng-show="menuSelected" ng-mouseleave="hideSubMenu()">
     <span ng-repeat="cat in menudata">
         <span ng-repeat="subcat in cat " ng-if="subcat.name==menuSelected">
             <span class="sub-sub-menu" ng-repeat="menu in subcat.menu">
