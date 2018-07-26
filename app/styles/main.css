@@ -126,16 +126,22 @@ a {
     background-color: rgba(255, 255, 255, 0.97);
 }
 
-.sub-menu .ng-hide {
+/* .sub-menu.ng-hide-remove {
     animation: showDown 2s ease-out;
 }
 
+.menu-options.ng-hide-remove {
+    animation: showDown 2s ease-out;
+} */
+
 @keyframes showDown {
     from {
-        transform: translateX(-100px);
+        /* transform: translateY(-100px); */
+        /* height: 0px; */
     }
     to {
-        transform: translateX(0px);
+        /* height: 300px; */
+        /* transform: translateY(0px); */
     }
 }
 

@@ -54,213 +54,35 @@
             </a>
         </span>
     </section>
-    <section class="sub-menu" ng-hide="!menuSelected" ng-mouseleave=" hideSubMenu() ">
+    <section class="sub-menu" ng-hide="!menuSelected" ng-mouseleave="hideSubMenu() ">
         <span ng-repeat="cat in menudata ">
             <span ng-repeat="subcat in cat " ng-if="subcat.name==menuSelected ">
                 <span class="sub-sub-menu " ng-repeat="menu in subcat.menu ">
                     <p>{{menu.name}}</p>
                     <hr>
                     <ul>
-                        <li ng-repeat="option in menu.options ">
-                            <a href="# "> {{option}}</a>
-                        </li>
+                        <a href="#" ng-repeat="option in menu.options">
+                            <li>
+                                {{option}}
+                            </li>
+                        </a>
                     </ul>
                 </span>
             </span>
         </span>
     </section>
-    <section class="main-body ">
-        <section class="slider ">
+    <section class="main-body">
+        <section class="slider">
             <img src="images/banner.png " alt="" srcset="">
         </section>
-        <div class="carousel slide product-slider" data-ride="carousel" role="listbox" id="clients-9-carousel">
-            <div class="carousel-inner slides5" data-visible="5">
-                <div class="carousel-item active">
-                    <div class="media-container-row">
-                        <div class="col-md-12 col-lg-15">
-                            <div class="wrap-img ">
-                                <img src="https://static4.cilory.com/273124-large_default/nologo-navy-casual-shirt.jpg" class="img-responsive clients-img"
-                                    media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-1 clonedCol" data-cloned-index="1">
-                            <div class="wrap-img ">
-                                <img src="https://bonobos-prod-s3.imgix.net/products/42272/original/Tops_Casual_Shirts_18643_BLS48_category.jpg?1495641690=&auto=format%2Ccompress&dpr=1&q=75&crop=false&fit=clip&w=800&h=1&ixlib=react-7.2.0"
-                                    class="img-responsive clients-img" media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-2 clonedCol" data-cloned-index="2">
-                            <div class="wrap-img ">
-                                <img src="https://www.cilory.com/257037-large_default/no-logo-sky-blue-casual-shirt.jpg" class="img-responsive clients-img"
-                                    media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-3 clonedCol" data-cloned-index="3">
-                            <div class="wrap-img ">
-                                <img src="https://5.imimg.com/data5/YJ/BO/MY-10973479/mens-designer-casual-shirt-500x500.jpg" class="img-responsive clients-img"
-                                    media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-4 clonedCol" data-cloned-index="4">
-                            <div class="wrap-img ">
-                                <img src="https://5.imimg.com/data5/YJ/BO/MY-10973479/mens-designer-casual-shirt-500x500.jpg" class="img-responsive clients-img"
-                                    media-simple="true">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="media-container-row">
-                        <div class="col-md-12 col-lg-15">
-                            <div class="wrap-img ">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/91MR26Sa4zL._UL1500_.jpg" class="img-responsive clients-img" media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-1 clonedCol" data-cloned-index="2">
-                            <div class="wrap-img ">
-                                <img src="assets2/images/3.png" class="img-responsive clients-img" media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-2 clonedCol" data-cloned-index="3">
-                            <div class="wrap-img ">
-                                <img src="assets2/images/4.png" class="img-responsive clients-img" media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-3 clonedCol" data-cloned-index="4">
-                            <div class="wrap-img ">
-                                <img src="http://www.sunprecautions.com/content/images/products/17100-3(prlgv)(studio)_900x1200.jpg" class="img-responsive clients-img"
-                                    media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-4 clonedCol" data-cloned-index="0">
-                            <div class="wrap-img ">
-                                <img src="assets2/images/1.png" class="img-responsive clients-img" media-simple="true">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="media-container-row">
-                        <div class="col-md-12 col-lg-15">
-                            <div class="wrap-img ">
-                                <img src="https://static7.cilory.com/249880-thickbox_default/feelit-navy-white-casual-shirt.jpg" class="img-responsive clients-img"
-                                    media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-1 clonedCol" data-cloned-index="3">
-                            <div class="wrap-img ">
-                                <img src="assets2/images/4.png" class="img-responsive clients-img" media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-2 clonedCol" data-cloned-index="4">
-                            <div class="wrap-img ">
-                                <img src="https://static3.cilory.com/240360-thickbox_default/nologo-black-denim-shirt.jpg" class="img-responsive clients-img"
-                                    media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-3 clonedCol" data-cloned-index="0">
-                            <div class="wrap-img ">
-                                <img src="assets2/images/1.png" class="img-responsive clients-img" media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-4 clonedCol" data-cloned-index="1">
-                            <div class="wrap-img ">
-                                <img src="https://4.imimg.com/data4/HV/OD/MY-24398386/men-s-casual-shirt-500x500.jpg" class="img-responsive clients-img"
-                                    media-simple="true">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="media-container-row">
-                        <div class="col-md-12 col-lg-15">
-                            <div class="wrap-img ">
-                                <img src="assets2/images/4.png" class="img-responsive clients-img" media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-1 clonedCol" data-cloned-index="4">
-                            <div class="wrap-img ">
-                                <img src="http://saudi.khoborbd.com/wp-content/uploads/2015/06/pepe-teal-plain-men-shirt.jpg" class="img-responsive clients-img"
-                                    media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-2 clonedCol" data-cloned-index="0">
-                            <div class="wrap-img ">
-                                <img src="assets2/images/1.png" class="img-responsive clients-img" media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-3 clonedCol" data-cloned-index="1">
-                            <div class="wrap-img ">
-                                <img src="assets2/images/2.png" class="img-responsive clients-img" media-simple="true">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-15 cloneditem-4 clonedCol" data-cloned-index="2">
-                            <div class="wrap-img ">
-                                <img src="https://d5nkxbcmx4bo4.cloudfront.net/faceview/a9d/ia/bf/a7b/affimgs/az-large-1158003.jpg" class="img-responsive clients-img"
-                                    media-simple="true">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <a data-app-prevent-settings="" class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#clients-9-carousel">
-                    <span aria-hidden="true" class="mbri-left mbr-iconfont"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a data-app-prevent-settings="" class="carousel-control carousel-control-next" role="button" data-slide="next" href="#clients-9-carousel">
-                    <span aria-hidden="true" class="mbri-right mbr-iconfont"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus sapiente, optio harum eveniet nemo voluptatibus
-            necessitatibus temporibus numquam voluptatum autem perspiciatis odio quis possimus pariatur inventore qui voluptatem
-            cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos reprehenderit libero voluptas,
-            tenetur sequi ullam minima omnis blanditiis adipisci illum deleniti soluta excepturi odit molestias sapiente
-            aspernatur, delectus aliquid? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque eum numquam voluptates
-            ad in praesentium quos at repellat eligendi nobis. Pariatur earum molestias numquam similique quidem reprehenderit
-            hic, totam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptates ducimus, ea asperiores
-            eligendi consequuntur similique atque assumenda deleniti reprehenderit velit et adipisci, laudantium accusantium
-            suscipit nobis quas exercitationem numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos impedit
-            vero, omnis consectetur mollitia aut architecto nulla voluptas labore modi itaque? Magnam enim fugiat eius, in
-            eveniet quae quis delectus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas odio exercitationem
-            accusantium natus ducimus architecto tempore provident est nobis voluptate, omnis asperiores? Eveniet, quaerat
-            itaque iste consectetur minima blanditiis suscipit? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Sint, laudantium quia. Quasi quam mollitia nam aspernatur nemo iste repellat fugiat labore, necessitatibus, pariatur
-            repudiandae error maiores praesentium quae natus unde. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Minima id exercitationem blanditiis voluptates dolorem, natus totam sit porro eveniet optio nam beatae, aliquam
-            ab, saepe quisquam ad voluptatem hic quo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, recusandae
-            fugit eum magnam et doloribus voluptates accusamus, atque commodi eos quam ut, qui molestiae debitis ullam fugiat
-            soluta hic? Accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis et dolorum id, eaque,
-            aliquam eveniet temporibus numquam aut ducimus quis eos consequuntur, sint corrupti quod rem totam culpa qui
-            obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque consectetur fugit voluptates similique
-            atque beatae, mollitia facere obcaecati tempore excepturi sed at, totam ad debitis amet, veniam deserunt quisquam
-            maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus sapiente, optio harum eveniet
-            nemo voluptatibus necessitatibus temporibus numquam voluptatum autem perspiciatis odio quis possimus pariatur
-            inventore qui voluptatem cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dignissimos reprehenderit
-            libero voluptas, tenetur sequi ullam minima omnis blanditiis adipisci illum deleniti soluta excepturi odit molestias
-            sapiente aspernatur, delectus aliquid? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque eum numquam
-            voluptates ad in praesentium quos at repellat eligendi nobis. Pariatur earum molestias numquam similique quidem
-            reprehenderit hic, totam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptates
-            ducimus, ea asperiores eligendi consequuntur similique atque assumenda deleniti reprehenderit velit et adipisci,
-            laudantium accusantium suscipit nobis quas exercitationem numquam. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Eos impedit vero, omnis consectetur mollitia aut architecto nulla voluptas labore modi itaque? Magnam enim
-            fugiat eius, in eveniet quae quis delectus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas odio
-            exercitationem accusantium natus ducimus architecto tempore provident est nobis voluptate, omnis asperiores?
-            Eveniet, quaerat itaque iste consectetur minima blanditiis suscipit? Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Sint, laudantium quia. Quasi quam mollitia nam aspernatur nemo iste repellat fugiat labore,
-            necessitatibus, pariatur repudiandae error maiores praesentium quae natus unde. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Minima id exercitationem blanditiis voluptates dolorem, natus totam sit porro eveniet optio
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fuga! Quas molestias temporibus, delectus
-            at, sunt obcaecati facilis vitae repellat fuga ad dolorum eligendi voluptates explicabo rem ipsum consectetur
-            iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem consequatur illum eaque itaque qui
-            odit sit, dolor explicabo voluptate quasi. Ad consequatur, laboriosam amet id totam nobis odio voluptates corrupti
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, fugit. Dolor eligendi voluptatibus ad dicta
-            molestiae, molestias praesentium, obcaecati eveniet quaerat perspiciatis explicabo, dolorem non omnis necessitatibus
-            quas. Eos, quasi.
-        </p>
+
+
+        <!-- <img src="https://4.imimg.com/data4/HV/OD/MY-24398386/men-s-casual-shirt-500x500.jpg" class="img-responsive clients-img"
+            media-simple="true">
+        <img src="http://saudi.khoborbd.com/wp-content/uploads/2015/06/pepe-teal-plain-men-shirt.jpg" class="img-responsive clients-img"
+            media-simple="true">
+        <img src="https://5.imimg.com/data5/YJ/BO/MY-10973479/mens-designer-casual-shirt-500x500.jpg" class="img-responsive clients-img"
+            media-simple="true"> -->
     </section>
     <footer class="footer ">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui eveniet quis iste tempora consequatur perferendis
@@ -276,8 +98,8 @@
 
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="scripts/indejs.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/factory/menu.js"></script>
@@ -285,3 +107,80 @@
 </body>
 
 </html>
+
+
+<!-- <section class="container-fluid">
+    <section class="container">
+        <section class="row">
+            <div class="col-md-6">
+                <div class="carousel slide product-slider" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+                    <div class="carousel-inner">
+                        <span class="item active">
+                            <span class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#">
+                                    <img src="https://static4.cilory.com/273124-large_default/nologo-navy-casual-shirt.jpg" class="img-responsive">
+                                </a>
+                            </span>
+                        </span>
+                        <span class="item">
+                            <span class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#">
+                                    <img src="https://www.cilory.com/257037-large_default/no-logo-sky-blue-casual-shirt.jpg" class="img-responsive">
+                                </a>
+                            </span>
+                        </span>
+                        <span class="item">
+                            <span class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#">
+                                    <img src="https://5.imimg.com/data5/YJ/BO/MY-10973479/mens-designer-casual-shirt-500x500.jpg" class="img-responsive">
+                                </a>
+                            </span>
+                        </span>
+                        <span class="item">
+                            <span class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91MR26Sa4zL._UL1500_.jpg" class="img-responsive">
+                                </a>
+                            </span>
+                        </span>
+                        <span class="item">
+                            <span class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#">
+                                    <img src="https://d5nkxbcmx4bo4.cloudfront.net/faceview/a9d/ia/bf/a7b/affimgs/az-large-1158003.jpg" class="img-responsive">
+                                </a>
+                            </span>
+                        </span>
+                        <span class="item">
+                            <span class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#">
+                                    <img src="http://www.sunprecautions.com/content/images/products/17100-3(prlgv)(studio)_900x1200.jpg" class="img-responsive">
+                                </a>
+                            </span>
+                        </span>
+                        <span class="item">
+                            <span class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#">
+                                    <img src="https://static7.cilory.com/249880-thickbox_default/feelit-navy-white-casual-shirt.jpg" class="img-responsive">
+                                </a>
+                            </span>
+                        </span>
+                        <span class="item">
+                            <span class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="#">
+                                    <img src="https://static3.cilory.com/240360-thickbox_default/nologo-black-denim-shirt.jpg" class="img-responsive">
+                                </a>
+                            </span>
+                        </span>
+                        </span>
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
+        </section>
+    </section>
+</section> -->
