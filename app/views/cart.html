@@ -34,8 +34,10 @@
             </section>
         </section>
     </header>
-    <section class="navbar navigation sticky-top" ng-include="'templates/menu.html'"></section>
-    <section ng-include="'templates/subMenu.html'"></section>
+    <section class="container-fluid menu-bar">
+        <section class="navbar navigation" ng-include="'templates/menu.html'"></section>
+        <section ng-include="'templates/subMenu.html'"></section>
+    </section>
     <section class="main-body container-fluid" ng-controller="CartCtrl">
         <section ng-if="!dataAvailable" class="progress-indicator">
             <div class="loader">
@@ -45,10 +47,10 @@
             <section ng-if="dataAvailable" class="row">
                 <section class="col-md-9">
                     <section class="cart-header">Cart</section>
-                    <section ng-repeat="product in cartProducts track by $index">
+                    <!-- <section ng-repeat="product in cartProducts track by $index">
                         <section class="cart-product" ng-include="'templates/cartProduct.html'">
                         </section>
-                    </section>
+                    </section> -->
                 </section>
                 <section class="col-md-3">
                     <section class="price-header">
@@ -91,6 +93,7 @@
     <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../../bower_components/angular/angular.min.js"></script>
+    <script src="../../bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="../scripts/indejs.js"></script>
     <script src="../scripts/app.js"></script>
     <script src="../scripts/factory/menu.js"></script>

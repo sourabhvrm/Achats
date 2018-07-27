@@ -6,6 +6,7 @@
  * Controller of the achatsApp
  */
 app.controller('MenuCtrl', ["$scope", "menuFactory", function (scope, menuFactory) {
+    scope.email_link = false;
     // console.log("Excecuting Promise");
     var promise = menuFactory.retrieveData();
     // console.log("Promise Executed");

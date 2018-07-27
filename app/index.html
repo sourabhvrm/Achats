@@ -18,7 +18,7 @@
             <section class="top-links">
                 <ul class="list-inline">
                     <li class="list-inline-item">
-                        <a href="">Email Sign Up</a>
+                        <a href="" ng-click="email_link=true">Email Sign Up</a>
                     </li>
                     <li class="list-inline-item">
                         <a href="">Customer Service</a>
@@ -27,51 +27,54 @@
                         <a href="">Find a Store</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="">Sign In</a>
+                        <a href="" ng-click="signin_link=true">Sign In</a>
                     </li>
                     <span>India</span>
                 </ul>
             </section>
         </section>
     </header>
-    <section class="navbar navigation sticky-top">
-        <a href="index.html ">
-            <img src="icons/logo2.png" alt="" id="logo-large">
-            <img src="icons/logo2.png" alt="" id="logo-small">
-        </a>
-        <section class="categories">
-            <span ng-repeat="subcat in menudata">
-                <section class="menu-link">
-                    <a href="views/{{subcat.category.name | lowercase}}.html" ng-mouseenter="displaySubMenu(subcat.category.name)" ng-mouseleave="hideMenu()">{{subcat.category.name}}</a>
-                </section>
+    <section class="container-fluid menu-bar">
+        <section class="navbar navigation">
+            <span class="logo">
+                <a href="index.html ">
+                    <img src="icons/logo2.png" alt="" id="logo">
+                </a>
             </span>
-        </section>
-        <span class="form-inline">
-            <input class="form-control" type="search" name="" id="search-input" placeholder="Search">
-            <button class="fa fa-search" id="search-button"></button>
-            <a href="views/cart.html" id="cart-link">Cart
-                <img src="icons/cart.jpg" alt="Cart" id="cart-logo">
-            </a>
-        </span>
-    </section>
-    <section class="sub-menu" ng-hide="!menuSelected" ng-mouseleave="hideSubMenu() ">
-        <span ng-repeat="cat in menudata ">
-            <span ng-repeat="subcat in cat " ng-if="subcat.name==menuSelected ">
-                <span class="sub-sub-menu " ng-repeat="menu in subcat.menu ">
-                    <p>{{menu.name}}</p>
-                    <hr>
-                    <ul>
-                        <a href="#" ng-repeat="option in menu.options">
-                            <li>
-                                {{option}}
-                            </li>
-                        </a>
-                    </ul>
+            <span class="categories">
+                <ul class="menu-link">
+                    <li ng-repeat="subcat in menudata">
+                        <a href="views/{{subcat.category.name | lowercase}}.html" ng-mouseenter="displaySubMenu(subcat.category.name)" ng-mouseleave="hideMenu()">{{subcat.category.name}}</a>
+                    </li>
+                </ul>
+            </span>
+            <span class="search-span">
+                <input class="form-control" type="search" name="" id="search-input" placeholder="Search">
+                <button class="fa fa-search" id="search-button"></button>
+                <a href="views/cart.html" id="cart-link">Cart
+                    <img src="icons/cart.jpg" alt="Cart" id="cart-logo">
+                </a>
+            </span>
+            <section class="sub-menu" ng-hide="!menuSelected" ng-mouseleave="hideSubMenu()">
+                <span ng-repeat="cat in menudata ">
+                    <span ng-repeat="subcat in cat " ng-if="subcat.name==menuSelected ">
+                        <span class="sub-sub-menu " ng-repeat="menu in subcat.menu ">
+                            <p>{{menu.name}}</p>
+                            <hr>
+                            <ul>
+                                <li ng-repeat="option in menu.options">
+                                    <a href="#">
+                                        {{option}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </span>
+                    </span>
                 </span>
-            </span>
-        </span>
+            </section>
+        </section>
     </section>
-    <section class="main-body">
+    <section class="container-fluid main-body">
         <section class="slider">
             <img src="images/banner.png " alt="" srcset="">
         </section>
@@ -83,8 +86,99 @@
             media-simple="true">
         <img src="https://5.imimg.com/data5/YJ/BO/MY-10973479/mens-designer-casual-shirt-500x500.jpg" class="img-responsive clients-img"
             media-simple="true"> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui eveniet quis iste tempora consequatur perferendis
+            fugit ad soluta nobis veniam nam, in culpa blanditiis possimus voluptate. Hic, qui cupiditate. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Cumque atque doloribus obcaecati mollitia necessitatibus quidem corporis
+            enim. Deleniti vitae delectus molestias, odit nostrum dignissimos ratione, eligendi, alias odio error nesciunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui eveniet quis iste tempora consequatur perferendis
+            fugit ad soluta nobis veniam nam, in culpa blanditiis possimus voluptate. Hic, qui cupiditate. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Cumque atque doloribus obcaecati mollitia necessitatibus quidem corporis
+            enim. Deleniti vitae delectus molestias, odit nostrum dignissimos ratione, eligendi, alias odio error nesciunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui eveniet quis iste tempora consequatur perferendis
+            fugit ad soluta nobis veniam nam, in culpa blanditiis possimus voluptate. Hic, qui cupiditate. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Cumque atque doloribus obcaecati mollitia necessitatibus quidem corporis
+            enim. Deleniti vitae delectus molestias, odit nostrum dignissimos ratione, eligendi, alias odio error nesciunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui eveniet quis iste tempora consequatur perferendis
+            fugit ad soluta nobis veniam nam, in culpa blanditiis possimus voluptate. Hic, qui cupiditate. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Cumque atque doloribus obcaecati mollitia necessitatibus quidem corporis
+            enim. Deleniti vitae delectus molestias, odit nostrum dignissimos ratione, eligendi, alias odio error nesciunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui eveniet quis iste tempora consequatur perferendis
+            fugit ad soluta nobis veniam nam, in culpa blanditiis possimus voluptate. Hic, qui cupiditate. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Cumque atque doloribus obcaecati mollitia necessitatibus quidem corporis
+            enim. Deleniti vitae delectus molestias, odit nostrum dignissimos ratione, eligendi, alias odio error nesciunt.
+        </p>
     </section>
-    <footer class="footer ">
+    <section ng-style="email_link&&{'display':'block'}" class="container-fluid overlay">
+        <section class="container">
+            <section ng-hide="!email_link" class="overlay-box">
+                <p>Sign Up
+                    <i ng-click="email_link=false" class="remove-icon glyphicon glyphicon-remove"></i>
+                </p>
+                <hr>
+                <form class="" action="" method="POST">
+                    <div class="form-group">
+                        <label class="col-md-2 col-md-offset-2" for="emailid">Email Id : </label>
+                        <span class="col-md-6">
+                            <input class="form-control" type="email" placeholder="Enter Email Id" id="emailid" name="emailid">
+                        </span>
+                        <span class="col-md-2"></span>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label class="col-md-2 col-md-offset-2" for="gender">Gender :
+                            <span class="col-md-3">
+                                <label for="" class="radio-inline">
+                                    <input type="radio" name="gender">Male</label>
+                            </span>
+                            <span class="col-md-3">
+                                <label for="" class="radio-inline">
+                                    <input type="radio" name="gender" id="female">Female</label>
+                            </span>
+                            <span class="col-md-2"></span>
+                        </label>
+                    </div> -->
+                    <div class="form-group submit-btn">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </section>
+    <section ng-style="signin_link&&{'display':'block'}" class="container-fluid overlay">
+        <section class="container">
+            <section ng-hide="!signin_link" class="overlay-box">
+                <p>Login
+                    <i ng-click="signin_link=false" class="remove-icon glyphicon glyphicon-remove"></i>
+                </p>
+                <hr>
+                <section class="passport-button">
+                    <button id="facebook">
+                        <i class="fa fa-facebook-square"></i>
+                        Facebook
+                    </button>
+                    <button id="google">
+                        <i class="fa fa-google"></i>
+                        Google
+                    </button>
+                </section>
+                <form class="form-horizontal" action="" method="POST">
+                    <div class="form-group">
+                        <div class="col-md-6 col-md-offset-3">
+                            <input class="form-control" type="email" placeholder="Enter Email Id" id="emailid" name="emailid">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6 col-md-offset-3">
+                            <input class="form-control" type="password" name="password" id="password" placeholder="Enter Password">
+                        </div>
+                    </div>
+                    <div class="form-group submit-btn">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </section>
+    <footer class="footer">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui eveniet quis iste tempora consequatur perferendis
             fugit ad soluta nobis veniam nam, in culpa blanditiis possimus voluptate. Hic, qui cupiditate. Lorem ipsum dolor
             sit amet consectetur adipisicing elit. Cumque atque doloribus obcaecati mollitia necessitatibus quidem corporis
@@ -110,7 +204,7 @@
 
 
 <!-- <section class="container-fluid">
-    <section class="container">
+    <section class="container"
         <section class="row">
             <div class="col-md-6">
                 <div class="carousel slide product-slider" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">

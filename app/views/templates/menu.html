@@ -1,18 +1,19 @@
-<a href="../index.html">
-    <img src="../../icons/logo2.png" alt="" id="logo-large">
-    <img src="../../icons/logo2.png" alt="" id="logo-small">
-</a>
-<section class="categories">
-    <span ng-repeat="subcat in menudata">
-        <section class="menu-link">
+<span class="logo">
+    <a href="../../index.html ">
+        <img src="../../icons/logo2.png" alt="" id="logo">
+    </a>
+</span>
+<span class="categories">
+    <ul class="menu-link">
+        <li ng-repeat="subcat in menudata">
             <a href="{{subcat.category.name | lowercase}}.html" ng-mouseenter="displaySubMenu(subcat.category.name)" ng-mouseleave="hideMenu()">{{subcat.category.name}}</a>
-        </section>
-    </span>
-</section>
-<span class="form-inline">
+        </li>
+    </ul>
+</span>
+<span class="search-span">
     <input class="form-control" type="search" name="" id="search-input" placeholder="Search">
-    <button class="fa fa-search" id="search-button" ng-click="searchButton()"></button>
-    <a href="../../views/cart.html" id="cart-link">Cart
+    <button class="fa fa-search" id="search-button"></button>
+    <a href="cart.html" id="cart-link">Cart
         <img src="../../icons/cart.jpg" alt="Cart" id="cart-logo">
     </a>
 </span>

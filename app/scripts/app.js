@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-const app = angular.module('achatsApp', []);
+const app = angular.module('achatsApp', ['ngAnimate']);
 app.run(() => {
     console.log("Run Called");
 });

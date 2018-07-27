@@ -33,8 +33,10 @@
             </section>
         </section>
     </header>
-    <section class="navbar navigation sticky-top" ng-include="'templates/menu.html'"></section>
-    <section ng-include="'templates/subMenu.html'"></section>
+    <section class="container-fluid menu-bar">
+        <section class="navbar navigation" ng-include="'templates/menu.html'"></section>
+        <section ng-include="'templates/subMenu.html'"></section>
+    </section>
     <section class="main-body" ng-controller="MenCtrl">
         <section id="carouselExampleSlidesOnly" class="carousel slide slider" data-ride="carousel" data-interval="3000">
             <section class="carousel-inner">
@@ -60,6 +62,7 @@
     <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../../bower_components/angular/angular.min.js"></script>
+    <script src="../../bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="../scripts/indejs.js"></script>
     <script src="../scripts/app.js"></script>
     <script src="../scripts/factory/menu.js"></script>

@@ -1,5 +1,7 @@
 .main-body {
-    border-collapse: collapse;
+    padding: 0px;
+    /* position: absolute; */
+    margin-top: 50px;
 }
 
 .progress-indicator {
@@ -60,19 +62,19 @@
 }
 
 .prod-title {
-    position: absolute;
+    /* position: absolute; */
     font-size: 20px;
     left: 225px;
 }
 
 .prod-brand {
-    position: absolute;
+    /* position: absolute; */
     left: 225px;
     top: 50px;
 }
 
 .price {
-    position: absolute;
+    /* position: absolute; */
     left: 225px;
     top: 90px;
 }
@@ -106,7 +108,7 @@
 }
 
 .cart-product>button {
-    position: absolute;
+    /* position: absolute; */
     left: 225px;
     top: 150px;
 }

@@ -1,10 +1,9 @@
 window.onscroll = function () {
     if (document.body.scrollTop > 1 | document.documentElement.scrollTop > 1) {
-        document.querySelector("#logo-large").style = "display:none";
-        document.querySelector("#logo-small").style = "display:block";
+        document.querySelectorAll(".logo")[0].style = "top:0px; left:165px";
+        document.querySelector("#logo").style = "height:50px";
     } else {
-        document.querySelector("#logo-large").style = "display:block";
-        document.querySelector("#logo-small").style = "display:none";
-
+        document.querySelectorAll(".logo")[0].style = "top:-10px; left:150px";
+        document.querySelector("#logo").style = "height:73px";
     }
 }
